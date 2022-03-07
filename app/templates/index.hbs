@@ -1,0 +1,15 @@
+{{!-- <div class='link-container'>
+  <LinkTo @route="index" class="link">home</LinkTo>
+  <LinkTo @route="about" class="link">about</LinkTo>
+  <LinkTo @route="reserve" class="link">make a reservation</LinkTo>
+</div> --}}
+
+{{!-- <div class="reservations">
+  <section class="results">
+    {{#each @model as |reservation|}}
+      <Reservation @reservation={{reservation}}/>
+    {{/each}}
+  </section>
+</div> --}}
+
+<Reservations @reservations={{@model}} />

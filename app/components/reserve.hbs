@@ -1,0 +1,18 @@
+<section class="reserve-form">
+  <label class='input'>Name: 
+    <Input @value={{this.name}} class="search-bar" />
+  </label>
+  <label class='input'>Date:  
+    <Input @value={{this.date}} class="search-bar" />
+  </label>
+  <label class='input'>Time: 
+    <Input @value={{this.time}} class="search-bar" />
+  </label>
+  <label class='input'>Number of Guests: 
+    <Input 
+      @value={{this.numOfGuests}} 
+      class="search-bar"
+      @type="number" />
+  </label>
+    <button class="input" type="submit" {{on 'click' this.submitRes}}>Submit</button>
+</section>

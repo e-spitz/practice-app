@@ -1,0 +1,12 @@
+{{yield}}
+<LinkTo @route="details" @model={{@reservation.id}}>
+  <article class="resy">
+      {{!-- <h3>{{@reservation.id}}</h3> --}}
+      <div class="detail owner">
+        <span>Name:</span> {{@reservation.name}}
+      </div>
+      <div class="detail type">
+        <span>Date:</span> {{@reservation.date}}
+      </div>
+  </article>
+</LinkTo>

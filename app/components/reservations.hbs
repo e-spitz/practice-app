@@ -1,0 +1,18 @@
+<div class="reservations">
+  <label class='input'>
+    <p>search a reservation by name: </p>
+    <Input @value={{this.query}} class="search-bar" />
+  </label>
+  {{!-- <section class="results">
+    {{#each @reservations as |reservation|}}
+      <Reservation @reservation={{reservation}}/>
+    {{/each}}
+  </section> --}}
+  <section class="results">
+  <Reservations::Filter @reservations={{@reservations}} @query={{this.query}} as |results|>
+    {{#each results as |reservation|}}
+      <Reservation @reservation={{reservation}}/>
+    {{/each}}
+  </Reservations::Filter>
+  </section>
+</div>

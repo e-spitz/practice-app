@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background: black;
+  color: white;
+  padding: 5%;
+  font-size: 4em;
+}
+
+nav:hover {
+  color: plum;
+}
+
+.link {
+  color: black;
+  font-size: 2em;
+  margin: 2%;
+}
+
+.link:hover {
+  text-decoration: underline plum;
+}
+
+.results {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+}
+
+.resy {
+  color: black;
+  border: 1px solid black;
+  padding: 5%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 5px;
+}
+
+.resy:hover {
+  background: lightgrey;
+}
+
+.reservations {
+  margin: 3%
+}
+
+a {
+  text-decoration: none;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4%;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 1px solid black;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-radius: 5px;
+  padding: 2%;
+}
+
+.detail {
+  font-size: 16px;
+  padding: 1%;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  margin: 3%;
+  font-size: 20px;
+}
+
+.search-bar {
+  margin-left: 1%; 
+  width: 30%;
+}

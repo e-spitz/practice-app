@@ -1,7 +1,9 @@
-{{page-title "PracticeApp"}}
+{{page-title "Reservation App"}}
 
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<section class="container">
+  <NavBar />
+  <div class="body">
+    {{outlet}}
+  </div>
+</section>
 
-{{outlet}}
